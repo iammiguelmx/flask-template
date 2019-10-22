@@ -2,10 +2,10 @@
 profile:
   first_name: Miguel
   last_name: Camacho
-  picture: static/img/
+  picture: static/img/profile.jpg
   contact: 
     address_one: Dolores Hidalgo, Guanajuato
-    address_two: 
+    address_two: San Felipe, Guanajuato
     phone: (428) 68 70140
   email: miguel.cam.mx@gmail.com
   description: Im a programmer with java, python.
@@ -16,7 +16,9 @@ social:
   github: https://github.com/iammiguelmx/
   twitter: https://twitter.com/elmiguelmx/
   linkedin: https://www.linkedin.com/in/miguelcamacho/
-  facebook: 
+  facebook: https://www.facebook.com/iammiguelmx/
+  instagram: https://www.instagram.com/iammiguelmx/
+  youtube: https://www.youtube.com/channel/UCFLCGFesBniye9vNwYe9HCg/
 
 # Experience section
 experience:
@@ -37,21 +39,22 @@ experience:
     company: MTI Consultoria
     from: August 2018
     to: December 2018
-    description: >
-      Desarrollo de sistema GRP para el Gobierno de Queretaro
+    description: > 
+      Technological consulting specialized in administration and software development. 
+      REGER-GRP tool that facilitates the accounting harmonization of government.
     link: http://www.mticonsultoria.com/
 
 # Education section
 education:
   item1:
     institution: Universidad Tecnologica del Norte de Guanajuato
-    program: Licenciatura en Tecnologias de la informaciòn y la comunicación
+    program: Bachelor's Degree Computer Enginner
     description: Licenciatura enfoca a la adminisraciòn de proyectos de TI
     from: August 2018
     to: August 2020
   item2:
     institution: Universidad Tecnologica del Norte de Guanajuato
-    program: Tecnico Superior Universitario
+    program: Bachelor's Degree Computer Enginner
     description: 
     from: August 2016
     to: July 2018
@@ -85,105 +88,24 @@ tools:
   - markdown
   - html5
   - bootstrap
-  - mysql
+  - google
 
 extra_skills:
-  - Facebook Messenger, Telegram, and SMS bots
-  - Web scraping and web automation
-  - APIs and web development, MongoDB
-  - Image processing and computer vision
-  - Machine learning and deep learning
-  - Many Python packages – Flask, NumPy, matplotlib, Tensorflow, etc.
-
-
-
-
-# Projects section
-projects:
-  item1:
-    title: flask-resume-template
-    subtitle: A resume template built with Flask
-    description: An easy-to-configure simple resume template built with Flask and Bootstrap.
-    link: https://flask-resume-template.glitch.me
-    github: https://github.com/RodolfoFerro/flask-resume-template/
-    img: flask-resume-template.png
-    tags: [Flask, Python, Bootstrap]
-  item2:
-    title: DLaaS
-    subtitle: Google Colab Notebooks
-    description: A set of Google Colab notebooks and a Flask base API to learn and serve Deep Learning. Prepared for my workshop at RIIAA 2.0.
-    link: https://rodolfoferro.xyz/RIIAA19-DLaaS/
-    github: https://github.com/RodolfoFerro/RIIAA19-DLaaS
-    img: riiaa.png
-    tags: [Python, Tensorflow 2.0, Keras, Deep Learning]
-  item3:
-    title: impipes
-    subtitle: Python package
-    description: A Python package to build image pipelines in a simple way. Preprocess data to feed neural networks in an easier way.
-    link: https://impipes.readthedocs.io/en/latest/
-    github: https://github.com/RodolfoFerro/impipes
-    img: impipes.png
-    tags: [Python, PyPI, Images, Data Preprocessing, Documentation]
-  item4:
-    title: MNIST Web Classifier
-    subtitle: A CNN served as a web platform
-    description: Classify handwritten digits directly on your computer or your phone. As simple as taking a picture of a written random multi-digit number.
-    link: https://flask-micro-template.glitch.me
-    github: https://github.com/RodolfoFerro/flask-micro-template
-    img: keras-mnist.png
-    tags: [Python, Bootstrap, Web Platform, Flask, MNIST, CNN, Keras]
-  item5:
-    title: EmojiMerida
-    subtitle: Google Colab Notebook
-    description: A real-time coding session with an emotion recognizer on facial expressions for a Data Mérida meetup (01/04/2019). The Ai was developed with Python and Keras.
-    link: https://colab.research.google.com/github/RodolfoFerro/EmojiMerida/blob/master/Data_M%C3%A9rida.ipynb
-    github:
-    img: data-merida.png
-    tags: [Python, Computer Vision, Keras, Neural Networks]
-  item6:
-    title: PythonBaseAPI
-    subtitle: API template built with Flask
-    description: API template built with Python and Flask. Serve an Iris classifier as an API. Content for a workshop. 
-    link: https://docs.google.com/presentation/d/e/2PACX-1vSc7Q82-lwQ8fKgR5WcT7Y0r9kotcYiNuyYjHRlF-fdhf6lkIrF9B_2akvzL-ZQ6ZAyT1lxM9f0mPdx/pub?start=false&loop=false&delayms=3000
-    github: https://github.com/RodolfoFerro/PythonBaseAPI
-    img: python-base-api.png
-    tags: [Flask, Python, API, scikit-learn]
-  item7:
-    title: flask-micro-template
-    subtitle: A micro template built with Flask
-    description: A micro template built with Flask and Bootstrap. Used for minimal testing in Glitch.
-    link: https://flask-micro-template.glitch.me
-    github: https://github.com/RodolfoFerro/flask-micro-template
-    img: flask-micro-template.png
-    tags: [Flask, Python, Bootstrap]
-  item8:
-    title: moltransform
-    subtitle: Python package
-    description: Molecular transformations for graphic displaying using Cartesian coordinates.
-    link: https://pypi.org/project/moltransform/
-    github: https://github.com/RodolfoFerro/moltransform
-    img: moltransform.png
-    tags: [Python, PyPI, Molecules, Rigid Transformations]
-  item9:
-    title: FitbitVersa-SimpleOmnitrix
-    subtitle: Fitbit Versa Clockface
-    description: My first clock face for Fitbit Versa, inspired in Ben 10's Omnitrix.
-    link: https://gallery.fitbit.com/details/6c75fa41-8de0-41db-b851-f21f7447018b
-    github: https://github.com/RodolfoFerro/FitbitVersa-SimpleOmnitrix
-    img: simple-omnitrix.png
-    tags: [TypeScript, Ben 10, Fitbit, Fitbit Versa]
-
+  - Chatbots with Dialog Flow
+  - APIs and web development
+  - Consume API`s Java, Python, Rails
+  - Firebase
+  - Swift 
+  - PWA Apps
 
 # Certifications and awards section
 awards:
-  - Academy and Technology – Statal Youth Prize Guanajuato 2018
-  - Quantum Computing 101 – IBM Q Certification Badge 2018
-  - 1st. Place – HDI Challenge – Talent City Hackathon 2018
-  - 1st. Place – SWITCH Hackathon 2017
-  - 1st. Place – IBM Hackapalooza – Bluehack Hackathon 2017
-  - 1st. Place – 12th. Creativity and Innovation Contest at the University of Guanajuato 2017
-  - 1st. Place – Centro Fox National Hackathon 2017
-  - 1st. Place – 6th. Creativity and Innovation Contest, DCEA-UG 2016
-  - Silver Award – SynBio Giant Jamboree – iGEM  2016
-  - 1st. Place – 4th. Creativity and Innovation Contest, DCNE-UG 2016
-  - 1st. Place – Fintech – HackBajío Hackathon 2016
+  - Participe in HackDH 2019
+  - Participe in LinceHach 2019
+  - Participe in NASA Space Apps Guanajuato 2019
+  - Aprende PHP desde cero PHP - emitted Udemy
+  - Iniciando con Containers en Docker
+  - Mastering Java for Beginners & Experts
+  - The Guide of Scrum  - emitted Udemy
+  - Aprende SQL desde cero - emitted Udemy
+  

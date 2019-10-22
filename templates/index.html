@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="A simple resume template built with Flask, based on Start Bootstrap resume template.">
-  <meta name="author" content="Rodolfo Ferro <rodolfoferroperez@gmail.com>">
+  <meta name="author" content="Miguel Camacho <miguel.cam.mx@gmail.com>">
 
   <title>Portfolio - {{ data.profile.first_name }} {{ data.profile.last_name }}</title>
 
@@ -52,12 +52,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#community">Community</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#workshops">Workshops</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -209,41 +203,6 @@
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-      <div class="w-100">
-        <h2 class="mb-5">Projects</h2>
-        <p>This section contains awesome projects that I've developed:</p>
-        <!-- Begins card -->
-        <div class="row">
-          {% for _, item in data.projects.items() %}
-          <div class="col-md-4 mb-5">
-            <div class="card h-100">
-              <img src="static/img/{{ item.img }}" class="card-img-top" alt="{{ item.title }}">
-              <div class="card-body">
-                <h3 class="card-title">{{ item.title }}</h3>
-                <h5 class="card-title">{{ item.subtitle }}</h5>
-                <p class="card-text">{{ item.description }}</p>
-                <p>
-                  {% for tag in item.tags %}
-                  <span class="badge badge-pill badge-secondary">{{ tag }}</span>
-                  {% endfor %}
-                </p>
-              </div>
-              <div class="card-footer">
-                {% if item.github != None %}
-                <a href="{{ item.github }}" class="text-dark" target="_blank">
-                  <i class="fab fa-github-square fa-2x"></i>
-                </a>
-                {% endif %}
-                <a href="{{ item.link }}" class="btn btn-dark float-right" target="_blank">View project</a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
@@ -260,7 +219,7 @@
     </section>
     
     <div class="container">
-    <p class="small float-right">This Flask template was built with <i class="fas fa-heart text-danger"></i> by <a href="https://rodolfoferro.xyz" target="_blank">Rodolfo Ferro</a>, under a MIT License.</p>
+    <p class="small float-right">This Flask template was built with <i class="fas fa-heart text-danger"></i> by <a href="https://miguelcamacho.abc" target="_blank">Miguel Camacho</a>, under a MIT License.</p>
     </div>
   </div>
 
