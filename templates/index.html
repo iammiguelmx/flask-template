@@ -5,7 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A simple resume template built with Flask, based on Start Bootstrap resume template.">
+  <meta name="description"
+    content="A simple resume template built with Flask, based on Start Bootstrap resume template.">
   <meta name="author" content="Miguel Camacho <miguel.cam.mx@gmail.com>">
 
   <title>Portfolio - {{ data.profile.first_name }} {{ data.profile.last_name }}</title>
@@ -20,7 +21,10 @@
 
   <!-- Custom styles for this template -->
   <link href="static/css/resume.css" rel="stylesheet">
-  <link rel="shortcut icon" href="https://mpng.pngfly.com/20180326/gxq/kisspng-github-computer-icons-icon-design-github-5ab8a31e334e73.4114704215220498222102.jpg" type="image/x-icon">
+  <link rel="shortcut icon"
+    href="static/img/user.png" type="image/x-icon">
+
+
 
 </head>
 
@@ -28,12 +32,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none text-white subheading">{{ data.profile.first_name }} {{ data.profile.last_name }}</span>
+      <span class="d-block d-lg-none text-white subheading">{{ data.profile.first_name }}
+        {{ data.profile.last_name }}</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ data.profile.picture }}" alt="">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +60,16 @@
           <a class="nav-link js-scroll-trigger" href="#community">Community</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#workshops">Workshops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#tecnologies">Tecnologies</a>
         </li>
       </ul>
     </div>
@@ -77,8 +92,8 @@
         </div>
         <p class="lead mb-5">{{ data.profile.description }}</p>
         <div class="social-icons">
-        {% for key, value in data.social.items() %}
-        {% if value != None %}
+          {% for key, value in data.social.items() %}
+          {% if value != None %}
           {% if key == 'website' %}
           <a href="{{ data.social.website }}" target="_blank">
             <i class="fas fa-globe-americas"></i>
@@ -88,8 +103,8 @@
             <i class="fab fa-{{ key }}"></i>
           </a>
           {% endif %}
-        {% endif %}
-        {% endfor %}
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -108,7 +123,7 @@
           </li>
           {% endfor %}
         </ul>
-        
+
         <div class="subheading mb-3">Extra skills / knowledge</div>
         <ul class="fa-ul mb-0">
           {% for item in data.extra_skills %}
@@ -142,7 +157,8 @@
           </div>
         </div>
         {% else %}
-        <p>For a detailed reference about this section, please visit <a href="{{ item }}" target="_blank">this link</a>.</p>
+        <p>For a detailed reference about this section, please visit <a href="{{ item }}" target="_blank">this link</a>.
+        </p>
         {% endif %}
         {% endfor %}
       </div>
@@ -154,7 +170,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
-        
+
         {% for _, item in data.education.items() %}
         {% if _ != 'reference' %}
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -169,7 +185,8 @@
           </div>
         </div>
         {% else %}
-        <p>For a detailed reference about this section, please visit <a href="{{ item }}" target="_blank">this link</a>.</p>
+        <p>For a detailed reference about this section, please visit <a href="{{ item }}" target="_blank">this link</a>.
+        </p>
         {% endif %}
         {% endfor %}
       </div>
@@ -180,7 +197,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="community">
       <div class="w-100">
         <h2 class="mb-5">Community and social activity</h2>
-        
+
         {% for _, item in data.community.items() %}
         {% if _ != 'reference' %}
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -197,9 +214,84 @@
           </div>
         </div>
         {% else %}
-        <p>For a detailed reference about this section, please visit <a href="{{ item }}" target="_blank">this link</a>.</p>
+        <p>For a detailed reference about this section, please visit <a href="{{ item }}" target="_blank">this link</a>.
+        </p>
         {% endif %}
         {% endfor %}
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="workshops">
+      <div class="w-100">
+        <h2 class="mb-5">Talks &amp; Workshops</h2>
+        <p>Some of my most recent talks and workshops are...</p>
+        <ul class="fa-ul mb-0">
+          {% for _, item in data.workshops.items() %}
+          <li>
+            {% if _ != 'reference' %}
+            <i class="fa-li fa fa-shapes text-info"></i>
+            <strong>{{ item.event }}</strong>
+            {% if item.material != None %}
+            <sup><a href='{{ item.material }}' target="_blank" class="badge badge-pill badge-primary">
+                Material <i class="fa fa-external-link-alt text-light"></i>
+              </a></sup>
+            {% endif %}
+            {% if item.link != None %}
+            <sup><a href='{{ item.link }}' target="_blank" class="badge badge-pill badge-danger">
+                Event site <i class="fa fa-external-link-alt text-light"></i>
+              </a></sup>
+            {% endif %}
+            <br> {{ item.workshop }}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% if 'reference' in data.workshops.keys() %}
+        <br><br>
+        <p>(More talks have happened between those dates <i>–most of them about AI–</i>, I'm only adding the most
+          relevant ones in that period of time.)</p>
+        <p>For a detailed reference about this section, please visit <a href="{{ data.workshops.reference }}"
+            target="_blank">this link</a>.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">Projects</h2>
+        <p>This section contains awesome projects that I've developed:</p>
+        <!-- Begins card -->
+        <div class="row">
+          {% for _, item in data.projects.items() %}
+          <div class="col-md-4 mb-5">
+            <div class="card h-100">
+              <img src="static/img/{{ item.img }}" class="card-img-top" alt="{{ item.title }}">
+              <div class="card-body">
+                <h3 class="card-title">{{ item.title }}</h3>
+                <h5 class="card-title">{{ item.subtitle }}</h5>
+                <p class="card-text">{{ item.description }}</p>
+                <p>
+                  {% for tag in item.tags %}
+                  <span class="badge badge-pill badge-secondary">{{ tag }}</span>
+                  {% endfor %}
+                </p>
+              </div>
+              <div class="card-footer">
+                {% if item.github != None %}
+                <a href="{{ item.github }}" class="text-dark" target="_blank">
+                  <i class="fab fa-github-square fa-2x"></i>
+                </a>
+                {% endif %}
+                <a href="{{ item.link }}" class="btn btn-dark float-right" target="_blank">View project</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </section>
 
@@ -217,9 +309,53 @@
         </ul>
       </div>
     </section>
-    
+
+    <section class="resume-section col-lg-12 align-items-center" id="tecnologies">
+      <div class="col-lg-12">
+        <h2 class="mb-3">Top Tecnologies</h2>
+        <div class="row">
+
+
+          <div class="form-group col-md-4">
+            <div class="card-header">#1</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">Ruby On Rails</h5>
+              <p class="card-text">Ruby On Rails es un Framework que permite el desarrollo de sitios web
+                sencillos y complejos
+              </p>
+              <a href="https://rubyonrails.org/" target="_blank">Visit Ruby On Rails</a>
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <div class="card-header">#2</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">Python with Flask</h5>
+              <p class="card-text">El desarollo de sitios web y paginas web con python es relativamente
+                sencillo con el uso de pyhton
+              </p>
+              <a href="https://www.palletsprojects.com/p/flask/" target="_blank">Visit Flask</a>
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <div class="card-header">#3</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">Laravel PHP</h5>
+              <p class="card-text">Laravel es un framework que permite el desarollo de sitios web
+                con conexion con mysql
+              </p>
+              <a href="https://laravel.com/" target="_blank">Visit Laravel</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <div class="container">
-    <p class="small float-right">This Flask template was built with <i class="fas fa-heart text-danger"></i> by <a href="https://miguelcamacho.abc" target="_blank">Miguel Camacho</a>, under a MIT License.</p>
+      <p class="small float-right">This Flask template was built with <i class="fas fa-heart text-danger"></i> by <a
+          href="https://miguelcamacho.abc" target="_blank">Miguel Camacho</a>, under a MIT License.</p>
     </div>
   </div>
 

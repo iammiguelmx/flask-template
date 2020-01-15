@@ -4,18 +4,20 @@ profile:
   last_name: Camacho
   picture: static/img/profile.jpg
   contact: 
+    phone: (428) ASK-4-IT!
     address_one: Dolores Hidalgo, Guanajuato
-    address_two: San Felipe, Guanajuato
-    phone: (428) 68 70140
+    address_two: 
   email: miguel.cam.mx@gmail.com
-  description: Im a programmer with java, python.
+  description: I am a web developer with experience in GRP creation, microservices creation, blog creation, developing technological 
+               solutions, with chatbots.I continue to learn new programming 
+               languages ​​that allow website optimization.
         
 # Social section
 social:
   website: 
   github: https://github.com/iammiguelmx/
   twitter: https://twitter.com/elmiguelmx/
-  linkedin: https://www.linkedin.com/in/miguelcamacho/
+  linkedin: https://www.linkedin.com/in/iammiguelmx/
   facebook: https://www.facebook.com/iammiguelmx/
   instagram: https://www.instagram.com/iammiguelmx/
   youtube: https://www.youtube.com/channel/UCFLCGFesBniye9vNwYe9HCg/
@@ -54,8 +56,8 @@ education:
     to: August 2020
   item2:
     institution: Universidad Tecnologica del Norte de Guanajuato
-    program: Bachelor's Degree Computer Enginner
-    description: 
+    program: University Higher Technician
+    description: TSU Area Sistemas Informaticos 
     from: August 2016
     to: July 2018
   
@@ -97,6 +99,97 @@ extra_skills:
   - Firebase
   - Swift 
   - PWA Apps
+
+
+# Certifications and awards section
+workshops:
+  item0:
+    event: MLH Localhost 2019
+    workshop: Okay Google, How Do I Build Actions for Assistant? - November 2019
+    material: https://github.com/iammiguelmx/workshop-mlh-assistant
+    link: https://iammiguelm.glitch.me/?fbclid=IwAR3AZow2V6dFaVfABEq5SgWYx0FL6e-Uzm23LNm2kwhFIwh4yq1A09HP_0Q
+  item1:
+    event: MLH Localhost 2019
+    workshop: How to Collaborate with GitHub - January 2020 
+    material: https://github.com/iammiguelmx/comandos-git-github
+    link: https://github.com/iammiguelmx/comandos-git-github
+
+
+
+# Projects section
+projects:
+  item1:
+    title: chat-python-flask
+    subtitle: Simple Chat using flask and flask_socketio
+    description: Simple chat in realtime using python Flask
+    link: https://iammiguelmx-chat-pyhonflask.glitch.me/
+    github: https://github.com/iammiguelmx/chat-pyhonFlask 
+    img: chat-flask.png
+    tags: [Flask, Python, Bootstrap]
+  item2:
+    title: Garbage App
+    subtitle: WebApp Garbage 2019 - Integradora 
+    description:  Simple WebApp that resolved problem of the trahs
+    link: https://iammiguelmx-integradora.glitch.me/
+    github: https://github.com/iammiguelmx/integradora
+    img: integradora.png
+    tags: [Python, MongoDB,  Bostrap, Maps, Messeger]
+  item3:
+    title: CRUD PHP POO
+    subtitle: Simple Example CRUD PHP
+    description: Example of CRUD using PHP and MySql 
+    link: http://elmiguel.epizy.com/
+    github: https://github.com/iammiguelmx/crud-pdo-js
+    img: phpcrud.png
+    tags: [PHP, MySql]
+  item4:
+    title: Simple Web App that show the simpson quotes
+    subtitle: Simpson quotes App
+    description: Web App using React that show the simpson quotes from API
+    link: https://iammiguelmx.github.io/thesimpsonquotes/
+    github: https://github.com/iammiguelmx/thesimpsonquotes 
+    img: quote.png
+    tags: [React, API, GitHub Pages]
+  item5:
+    title: Rest Api
+    subtitle: Rest Api Simple
+    description: I create a simple Api with mongoDB and Flask
+    link: https://iammiguelmx-rest-api.glitch.me/
+    github: https://github.com/iammiguelmx/rest-api
+    img: api.png
+    tags: [Python, Flask, MongoDB]
+  item6:
+    title: Workshop "Okay Google, How Do I Build Actions for Assistant?" 
+    subtitle: Okay Google, How Do I Build Actions for Assistant?
+    description: Material for the workshop in UTNG, Novermber 2019. 
+    link: https://iammiguelm.glitch.me/?fbclid=IwAR3AZow2V6dFaVfABEq5SgWYx0FL6e-Uzm23LNm2kwhFIwh4yq1A09HP_0Q
+    github: https://github.com/iammiguelmx/workshop-mlh-assistant
+    img: assistente.png
+    tags: [DialogFlow, Javascript, API Twitter]
+  item7:
+    title: My Blog
+    subtitle: Simple Blog 
+    description: I create a blog personal for posting post from tecnology
+    link: https://iammiguelmx.netlify.com/
+    github: https://github.com/iammiguelmx/blog
+    img: blog.png
+    tags: [Jekyll, Stackbit, Templates]
+  item8:
+    title: Template Boostrap
+    subtitle: Simple Template Flask 
+    description: Simple Info of my profile
+    link: https://iammiguelmx.glitch.me/
+    github: https://github.com/iammiguelmx/flask-template
+    img: template.png
+    tags: [Python, Template, Flask]
+  item9:
+    title: Info of the Food
+    subtitle: Info of the food
+    description: Info of the food, calories and etc.
+    link: https://iammiguelmx.github.io/clarifai-food-nutrition-demo/
+    github: https://github.com/iammiguelmx/clarifai-food-nutrition-demo
+    img: pizza.png
+    tags: [GithubPages, API]
 
 # Certifications and awards section
 awards:
