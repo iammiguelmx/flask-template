@@ -1,3 +1,13 @@
+# ==============================================================
+# Author: Miguel Camacho
+# Email: miguel,cam.mx@gmail.com
+# Twitter: @elmiguelmx
+#
+# ==============================================================
+
+# -*- coding: utf-8 -*-
+
+
 import yaml
 from flask import Flask
 from flask import render_template
