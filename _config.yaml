@@ -25,10 +25,31 @@ social:
 # Experience section
 experience:
   item0:
+    position: Developer Java Jr
+    company: Sistemas Premium
+    from: June 2021
+    to: Present
+    description: >
+     Sistemas Premium is a Mexican company that for more than 20 years has developed information
+     systems for medium and large companies. We are part of a solid business group and we are 
+     constantly growing, meeting the requirements of our clients and taking as our own the challenges 
+     of their companies.
+    link: https://www.sistemaspremium.com/
+  item1:
+    position: Programmer Analyst
+    company: Transportes Castores
+    from: January 2021
+    to: June 2021
+    description: >
+     Transportes Castores is a land freight transportation company with more than 30 years of experience, 
+     operating throughout Mexico and the West Coast of the United States, it has a fleet of one thousand 
+     80 trucks, of which 120 are parcels, a segment in the which now has 30% of Volkswagen Trucks.
+    link: https://www.castores.com.mx/
+  item2:
     position: Programmer, Dev Ops Beginner
     company: SOMA Tecnologia y Medios de Pago
     from: March 2019
-    to: Present
+    to: November 2020
     description: >
      SOMA Tecnologia y Medios de Pago It is a company formed by a group of professionals in the 
      technological and financial sector (Non-Banking Financial Intermediaries), specialized in micro 
@@ -36,7 +57,7 @@ experience:
      Financial Intermediaries) through a robust technological platform that includes the best business 
      practices for the sector.
     link: http://www.somatecnologia.com.mx/
-  item1:
+  item3:
     position: Programmer
     company: MTI Consultoria
     from: August 2018
