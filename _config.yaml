@@ -10,7 +10,7 @@ profile:
   email: miguel.cam.mx@gmail.com
   description: I am a web developer with experience in GRP creation, microservices creation, blog creation, developing technological 
                solutions, with chatbots.I continue to learn new programming 
-               languages ​​that allow website optimization.
+              
         
 # Social section
 social:
@@ -24,7 +24,7 @@ social:
 
 # Experience section
 experience:
-  item0:
+  item4:
     position: Developer Java Jr
     company: Sistemas Premium
     from: June 2021
@@ -35,7 +35,7 @@ experience:
      constantly growing, meeting the requirements of our clients and taking as our own the challenges 
      of their companies.
     link: https://www.sistemaspremium.com/
-  item1:
+  item3:
     position: Programmer Analyst
     company: Transportes Castores
     from: January 2021
@@ -57,7 +57,7 @@ experience:
      Financial Intermediaries) through a robust technological platform that includes the best business 
      practices for the sector.
     link: http://www.somatecnologia.com.mx/
-  item3:
+  item1:
     position: Programmer
     company: MTI Consultoria
     from: August 2018

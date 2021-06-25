@@ -5,8 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="A simple resume template built with Flask, based on Start Bootstrap resume template.">
+  <meta name="description" content="A simple resume template built with Flask, based on Start Bootstrap resume template.">
   <meta name="author" content="Miguel Camacho <miguel.cam.mx@gmail.com>">
 
   <title>Portfolio - {{ data.profile.first_name }} {{ data.profile.last_name }}</title>
@@ -21,9 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="static/css/resume.css" rel="stylesheet">
-  <link rel="shortcut icon"
-    href="static/img/user.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="static/img/user.png" type="image/x-icon">
 
 
 </head>
@@ -32,14 +29,12 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none text-white subheading">{{ data.profile.first_name }}
-        {{ data.profile.last_name }}</span>
+      <span class="d-block d-lg-none text-white subheading">{{ data.profile.first_name }}  {{ data.profile.last_name }}</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ data.profile.picture }}" alt="">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,9 +62,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#tecnologies">Tecnologies</a>
         </li>
       </ul>
     </div>
@@ -140,7 +132,6 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
-
         {% for _, item in data.experience.items() %}
         {% if _ != 'reference' %}
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -310,49 +301,7 @@
       </div>
     </section>
 
-    <section class="resume-section col-lg-12 align-items-center" id="tecnologies">
-      <div class="col-lg-12">
-        <h2 class="mb-3">Top Tecnologies</h2>
-        <div class="row">
-
-
-          <div class="form-group col-md-4">
-            <div class="card-header">#1</div>
-            <div class="card-body text-primary">
-              <h5 class="card-title">Ruby On Rails</h5>
-              <p class="card-text">Ruby On Rails es un Framework que permite el desarrollo de sitios web
-                sencillos y complejos
-              </p>
-              <a href="https://rubyonrails.org/" target="_blank">Visit Ruby On Rails</a>
-            </div>
-          </div>
-
-          <div class="form-group col-md-4">
-            <div class="card-header">#2</div>
-            <div class="card-body text-primary">
-              <h5 class="card-title">Python with Flask</h5>
-              <p class="card-text">El desarollo de sitios web y paginas web con python es relativamente
-                sencillo con el uso de pyhton
-              </p>
-              <a href="https://www.palletsprojects.com/p/flask/" target="_blank">Visit Flask</a>
-            </div>
-          </div>
-
-          <div class="form-group col-md-4">
-            <div class="card-header">#3</div>
-            <div class="card-body text-primary">
-              <h5 class="card-title">Laravel PHP</h5>
-              <p class="card-text">Laravel es un framework que permite el desarollo de sitios web
-                con conexion con mysql
-              </p>
-              <a href="https://laravel.com/" target="_blank">Visit Laravel</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
+  
     <div class="container">
       <p class="small float-right">This Flask template was built with <i class="fas fa-heart text-danger"></i> by <a
           href="https://miguelcamacho.abc" target="_blank">Miguel Camacho</a>, under a MIT License.</p>
