@@ -5,13 +5,16 @@ profile:
   picture: static/img/profile.jpg
   contact: 
     phone: (428) ASK-4-IT!
-    address_one: Dolores Hidalgo, Guanajuato
+    address_one: León, Guanajuato 🇲🇽
     address_two: 
   email: miguel.cam.mx@gmail.com
-  description: I am a web developer with experience in GRP creation, microservices creation, blog creation, developing technological 
-               solutions, with chatbots.I continue to learn new programming 
+  description: 
+    Hi there. I am a software engineer with practical experience in Back End Development. 
+    
+    I am a professional who adapts to your project. I have worked with several companies in the banking and transport sector, locally and at home offices. 
+  
+    I pride myself on being an extraordinarily fast-paced developer while still maintaining a high-quality standard.
               
-        
 # Social section
 social:
   website: 
@@ -25,15 +28,12 @@ social:
 # Experience section
 experience:
   item4:
-    position: Developer Java Jr
+    position: Java Enginner
     company: Sistemas Premium
     from: June 2021
     to: Present
     description: >
-     Sistemas Premium is a Mexican company that for more than 20 years has developed information
-     systems for medium and large companies. We are part of a solid business group and we are 
-     constantly growing, meeting the requirements of our clients and taking as our own the challenges 
-     of their companies.
+      Support and implementation of improvements to the host system for using WebLogic as an application server, Spring Framework, Hibernate and Sql Server.
     link: https://www.sistemaspremium.com/
   item3:
     position: Programmer Analyst
@@ -41,30 +41,23 @@ experience:
     from: January 2021
     to: June 2021
     description: >
-     Transportes Castores is a land freight transportation company with more than 30 years of experience, 
-     operating throughout Mexico and the West Coast of the United States, it has a fleet of one thousand 
-     80 trucks, of which 120 are parcels, a segment in the which now has 30% of Volkswagen Trucks.
+      Development and implementation of parcel and courier APIs, which quoted the merchandise of a client based on the client's parameters and the origin and destination promotions, guide generation, price tag shipment, guide cancellation and follow-up, using php with Lumen Framework, MySQL and NGINX, Swagger and Centos 7 as server.
     link: https://www.castores.com.mx/
   item2:
-    position: Programmer, Dev Ops Beginner
+    position: Developer
     company: SOMA Tecnologia y Medios de Pago
     from: March 2019
     to: November 2020
     description: >
-     SOMA Tecnologia y Medios de Pago It is a company formed by a group of professionals in the 
-     technological and financial sector (Non-Banking Financial Intermediaries), specialized in micro 
-     finance, who decided to create a company to provide solutions to the financial sector (Non-Banking
-     Financial Intermediaries) through a robust technological platform that includes the best business 
-     practices for the sector.
+      Creation and development of core banking reports, web electronic banking support and implementation of improvements to have greater availability and performance, API development for electronic banking migration using Java 8 and 11, Swagger, Docker, Spring Boot, PosgreSql and Ubuntu Server as a server.
     link: http://www.somatecnologia.com.mx/
   item1:
-    position: Programmer
+    position: Developer 
     company: MTI Consultoria
     from: August 2018
     to: December 2018
     description: > 
-      Technological consulting specialized in administration and software development. 
-      REGER-GRP tool that facilitates the accounting harmonization of government.
+      GRP migration from PL / SQL to Oracle ADF using Java, JSP and Oracle as database manager
     link: http://www.mticonsultoria.com/
 
 # Education section
@@ -105,21 +98,22 @@ tools:
   # Consider that the following are fa icons:
   - java
   - python
+  - php
+  - git-alt
   - github
-  - slack
+  - gitlab
   - trello
-  - markdown
-  - html5
-  - bootstrap
-  - google
-
+  - docker
+  - linux
+  - apple
+  
 extra_skills:
-  - Chatbots with Dialog Flow
-  - APIs and web development
-  - Consume API`s Java, Python, Rails
-  - Firebase
-  - Swift 
-  - PWA Apps
+  - Microservices development, using Spring Cloud.
+  - APIs and web development, SQLServer, MySQL, PosgreSQL.
+  - Monolithic applications, using Spring Framework, Tomcat, WebLogic, GlassFish.
+  - Monitoring NGINX servers using NGINX Amplify and deploy with Docker.
+  - Implementation of workflows with GitHub Actions, and DockerHub.
+  - Development of command line applications.
 
 
 # Certifications and awards section
